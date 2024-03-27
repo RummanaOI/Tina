@@ -17,6 +17,7 @@ export default function PostList(props) {
       <div>
         {postsList.map((post) => (
           <div key={post.node.id}>
+            <h1>{data.page.title}</h1>
             <Link href={`/posts/${post.node._sys.filename}`}>
               <a>{post.node._sys.filename}</a>
             </Link>
